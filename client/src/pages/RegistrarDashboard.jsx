@@ -7,6 +7,8 @@ function RegistrarDashboard() {
 
   useEffect(() => {
     fetchRecords();
+
+    
   }, []);
 
   const fetchRecords = async () => {
@@ -93,9 +95,11 @@ const handleApprove = async (record) => {
     <div style={{ textAlign: 'right', padding: '1rem' }}>
       <button
         onClick={() => {
-          localStorage.removeItem("isRegistrar");
+          //localStorage.removeItem("isRegistrar");
+          localStorage.clear();
           window.location.replace("/registrar-login");
           //window.location.href = "/registrar";
+          window.location.reload();
         }}
         className="dashboard-button red"
       >
