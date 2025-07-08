@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: #2e2e2e; /* grey box */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-box h1 {
+  margin-bottom: 1rem;
+}
+
+.login-box label {
+  display: block;
+  text-align: left;
+  margin: 1rem 0 0.3rem;
+  color: #ccc;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: #444;
+  color: white;
+  transition: background 0.3s;
+}
+
+.login-box input:focus {
+  background: #555;
+}
+
+.login-box button {
+  margin-top: 1.2rem;
+  background: deeppink;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.login-box button:hover {
+  background: hotpink;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
