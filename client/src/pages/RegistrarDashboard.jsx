@@ -96,7 +96,7 @@ const handleApprove = async (record) => {
       <button
         onClick={() => {
           //localStorage.removeItem("isRegistrar");
-          localStorage.clear();
+          sessionStorage.clear();
           window.location.replace("/registrar-login");
           //window.location.href = "/registrar";
           window.location.reload();
