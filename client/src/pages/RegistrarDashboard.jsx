@@ -12,7 +12,7 @@ function RegistrarDashboard() {
   const fetchRecords = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3001/registrar/records");
+      const res = await fetch("https://verifymycgpa-backend.onrender.com/registrar/records");
       const result = await res.json();
 
       if (result.success) {
@@ -38,7 +38,7 @@ const handleApprove = async (record) => {
   }
 
   try {
-    const res = await fetch('http://localhost:3001/send-verification', {
+    const res = await fetch('https://verifymycgpa-backend.onrender.com/send-verification', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -63,7 +63,7 @@ const handleApprove = async (record) => {
 
     console.log("🧪 Attempting to delete record with ID:", id);
 
-     const res = await fetch("http://localhost:3001/reject-record", {
+     const res = await fetch("https://verifymycgpa-backend.onrender.com/reject-record", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id }),
