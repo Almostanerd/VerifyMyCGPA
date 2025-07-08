@@ -94,7 +94,8 @@ const handleApprove = async (record) => {
       <button
         onClick={() => {
           localStorage.removeItem("isRegistrar");
-          window.location.href = "/registrar";
+          window.location.replace("/registrar-login");
+          //window.location.href = "/registrar";
         }}
         className="dashboard-button red"
       >
