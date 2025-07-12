@@ -17,7 +17,7 @@
 
 ## 🌟 Features
 ✅ OTP-based student login via **Supabase**  
-✅ CGPA submission & student alerted when registrar verifies cgpa
+✅ CGPA submission & student alerted when registrar verifies cgpa  
 ✅ **Recruiter email alerts** with attached verification  
 ✅ Dynamic PDF tokens with **JWT anti-tamper layer**  
 ✅ Registrar access protected with RLS + secure backend routing  
